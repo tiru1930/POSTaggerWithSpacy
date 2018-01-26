@@ -1,0 +1,21 @@
+POS Tagger
+
+Directory structure:
+
+train.txt --> Data for training and development
+test.txt --> Data for testing
+
+
+
+Output Format:
+
+pos_tagger/
+--------code/
+--------input/
+----------------train.txt
+----------------test.txt
+----------------test.tag --> tagged data for evaluation purpose
+--------output/
+----------------accuracy.txt --> Computed Acccuracy
+----------------test.out --> Tagged output from the system
+--------pos_tagger_writeup.pdf

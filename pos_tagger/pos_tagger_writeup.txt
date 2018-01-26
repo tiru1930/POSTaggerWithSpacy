@@ -1,0 +1,11 @@
+
+1.Have Trained POS Tagger with Spacy and got 68% of accuracy, which we can further improve, by giving the custom vocab.
+2.For the give training data , i had seprated the words and their tags by doing sentence split by space and '/' respectively.
+3.Since Spacy custom training looks for Universal POS taggers, i have taken this brown taxt taggers mapping to universal tagger mapping, from internet.
+4.Then using this en_brown_map.txt file i have mapped brown text taggers to universal taggers used the spacy for training propus.
+5.In given file i had created two class on is for pre-processing another one is for training and evaluations.
+
+Notes:
+
+1. I am exploring this issues why accuracy is very low , with  LogisticRegression we can get good accuracy. 
+2. This code has taking very long time for training  for 10K records for 25 epochs, and the losses are initial (from 1 to 10 epochs) decreased from 215 to 36 after on wards its again increased to 500 and then keep decreasing. (This is one issue that i am exploring)
